@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha ./**/**.spec.js",
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && ./node_modules/.bin/codecov",
     "dev": "nodemon --inspect index.js"
   },
   "author": "Eric Fledderman",
